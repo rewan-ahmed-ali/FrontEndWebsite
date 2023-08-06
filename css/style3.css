@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+:root{
+    --header-height: 4.5rem;
+    --page-width: calc(100% - 3rem);
+
+    --first-color: #2b2d42;
+    --first-color-alt: #8d99ae;
+    --second-color: #ef233c;
+    --second-color-alt: #d90429;
+    --text-color: #171f0f;
+    --white-color: #fff;
+
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: 0.4s linear;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin-top: var(--header-height);
+    font-family: "Times New Roman", Times, serif;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--second-color-alt);
+}
+.btn-alt{
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn-alt:hover{
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    z-index: 9999;
+}
+.nav{
+    width: 1124px;
+    max-width: var(--page-width);
+    margin: 0 auto;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+.nav .search,
+.nav .logo-menu,
+.nav .box-login,
+.right-menu .nav-toggle{
+    display: none;
+}
+.right-menu .search{
+    display: flex;
+    background: #324e68;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search:hover > .search-txt{
+  width: 240px;
+  padding:0px;
+}
+.search:hover > .search-btn{
+  background: white;
+}
+.right-menu .search-btn{
+  color: #d39797;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.right-menu .search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  width: 0px;
+}
+.logo{
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white-color);
+    margin-left: 2rem;
+}
+.logo span{
+    color: var(--second-color);
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.nav-list li{
+    margin-right: 2rem;
+
+}
+.nav-list li .nav-link{
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+}
+.nav-list li .nav-link:hover{
+    color: var(--second-color);
+}
+.active{
+  color: whitesmoke !important;
+}
+.right-menu{
+    display: flex;
+    align-items: center;
+}
+.right-menu > div{
+    position: relative;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: var(--h3-font-size);
+}
+.right-menu > div:hover{
+    color: var(--second-color);
+}
+.right-menu .menu-login,
+.right-menu .box-cart .cart{
+    position: relative;
+}
+.right-menu .box-cart span{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: var(--first-color-alt);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* Start Home Section */
+/*ملف css عاوز يتولع فيه */
+.discound{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #324e68;
+    color: var(--white-color);
+    padding: 0.5rem;
+}
+.discound i{
+    font-size: var(--normal-font-size);
+}
+.discound h2{
+    margin-left: 1rem;
+    font-size: var(--normal-font-size);
+}
+/* End Home Section */
+/* Start  Section */
+.populars{
+    padding: 2rem 0 3rem;
+    max-width: 1124px;
+    width: var(--page-width);
+    margin: 0 auto;
+    position: relative;
+}
+.container{
+    margin-top: 4rem;
+}
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    color: var(--second-color);
+}
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: var(--h1-font-size);
+    letter-spacing: 4px;
+    color: var(--first-color);
+    position: relative;
+    line-height: 36px;
+}
+.content-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+
+/*جزييه دي م عارفه احطها ام لا*/
+.card-box{
+    width: 90%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.card-box img{
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+
+}
+
+.card-box .caption{
+  position: absolute;
+    top: 150%;
+    width: 100%;
+    height: 100%;
+    background: #00000085;
+    transition: 0.7s;
+    text-align: center;
+}
+.card-box .caption .content{
+  position: relative;
+    top: 16px;
+    color: whitesmoke;
+}
+.card-box .caption .content h3{
+font-family: "Times New Roman", Times, serif;
+}
+
+.card-box .caption .content button{
+      border: 0px;
+      background: #b36551;
+      padding: 3px;
+
+    }
+.card-box .caption .content button p{
+      font-family: "Times New Roman", Times, serif;
+
+    }
+    .card-box:hover .caption{
+      top: 0px;
+    }
+
+/*لحد هنا*/
+
+
+
+.share{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 999;
+}
+.share .card-icon{
+    background-color: var(--second-color);
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.share .card-icon:hover{
+    background-color: var(--second-color-alt);
+}
+.share .card-icon a{
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+.card-btn a{
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #0000007d;
+    color: #d39797;
+
+}
+
+.right-menu .menu-login a{
+  color: white;
+
+}
+
+/* End  Section */
